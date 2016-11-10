@@ -6,7 +6,7 @@ import os.path
 
 boucle = True
 test = True 
-i = 0
+i = 0 #variable de choix de la session 1 nouvelle 2 ancienne
 fichier = open("dic.txt","r")
 
 lecture = fichier.read()
