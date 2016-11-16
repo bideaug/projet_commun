@@ -59,9 +59,10 @@ while Jouer == True :
             fct.Tour_de_jeu(joueur_3)
         elif joueur_actuelle == 4 :
             nom = obj.Joueur.__affichage__(joueur_4)
-            print("C'est au tour de",nom," de jouer ! ")
+            #print('C\' est au tour de',nom,' de jouer ! \n il a ',score,'point')
+            print('C\' est au tour de',nom,' de jouer !')
             fct.Tour_de_jeu(joueur_4)
-        joueur_acutelle=joueur_actuelle+1
+        joueur_actuelle=joueur_actuelle+1
         nb_etape = nb_etape-1
 """
     elif Nouvelle_partie == True and Premier_partie == False :

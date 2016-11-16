@@ -36,7 +36,12 @@ def Verificateur_de_des(de) :
 
 def is_figure(is_a_chouette_velute, is_a_chouette, is_a_velute):
     selecteur = 0
-    if is_a_chouette == True:
+    if is_a_chouette_velute == True :
+        print("is a chouette : ",is_a_chouette)
+        print("is a velute : ",is_a_velute)
+        print("is a chouette velute : ++ ",is_a_chouette_velute)
+        selecteur = 3
+    elif is_a_chouette == True:
         print("is a chouette ++ : ",is_a_chouette)
         print("is a velute : ",is_a_velute)
         print("is a chouette velute : ",is_a_chouette_velute)
@@ -46,17 +51,12 @@ def is_figure(is_a_chouette_velute, is_a_chouette, is_a_velute):
         print("is a velute ++ : ",is_a_velute)
         print("is a chouette velute : ",is_a_chouette_velute)
         selecteur = 2
-    elif is_a_chouette_velute == True :
-        print("is a chouette : ",is_a_chouette)
-        print("is a velute : ",is_a_velute)
-        print("is a chouette velute : ++ ",is_a_chouette_velute)
-        selecteur = 3
     else :
         print("Pas de point marquer !!")
         selecteur = 0
     return selecteur
 
-def Tour_de_jeu(joueur_1):
+def Tour_de_jeu(joueur):
     is_a_chouette = False
     is_a_velute = False
     is_a_chouette_velute = False
@@ -67,8 +67,7 @@ def Tour_de_jeu(joueur_1):
     test_velute = obj.Velute(de_1, de_2, de_3)
     is_a_chouette = test_chouette.__is_Chouette__()
     is_a_velute = test_velute.__is_Velute__()
-    print("is a velute = ",is_a_velute)
     test_chouette_velute=obj.Chouette_Velute()
     is_a_chouette_velute=test_chouette_velute.__is_Chouette_Velute__(is_a_chouette, is_a_velute)
     selecteur_de_figure=is_figure(is_a_chouette_velute,is_a_chouette,is_a_velute)
-
+    print(selecteur_de_figure)

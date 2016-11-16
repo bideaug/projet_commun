@@ -50,6 +50,9 @@ class Velute(Figure) :
         self.is_Velute = False
 
     def __is_Velute__(self):
+        self.de_1 = int(self.de_1)
+        self.de_2 = int(self.de_2)
+        self.de_3 = int(self.de_3)
         if self.de_1 + self.de_2 == self.de_3:
             self.is_Velute = True
         elif self.de_1 + self.de_3 == self.de_2:
