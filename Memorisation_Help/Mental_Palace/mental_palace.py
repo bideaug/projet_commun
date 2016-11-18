@@ -3,21 +3,24 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os.path
+import make_dir
+
+user_path = make_dir.Make_direction()
+logname = os.environ['LOGNAME']
 
 boucle = True
 test = True 
 i = 0 #variable de choix de la session 1 nouvelle 2 ancienne
-fichier = open("dic.txt","r")
+fichier = open("/home/"+logname+"/projet_commun/Memorisation_Help/Mental_Palace/dic.txt","r")
 
 lecture = fichier.read()
 lecture = lecture.lower()
 word = lecture.split()
 
-#print word
 
 while boucle :
     try : 
-        if os.path.isfile("log.txt") : 
+        if os.path.isfile(user_path+"/log.txt") : 
             i = input("1) Nouvelle session de test\n2) Ancienne session de test\n")
         else :
             i = 1
@@ -29,7 +32,7 @@ while boucle :
         boucle = True
 
 if i==2 :
-    logfile = open("log.txt","r")
+    logfile = open(user_path+"/log.txt","r") 
     verifiaction = str()
     verification = raw_input("Veuillez entrer la liste de mot dans l'ordre\n")
     log = logfile.read()
@@ -37,7 +40,7 @@ if i==2 :
     print log
 
 else :
-        logfile = open("log.txt","w")
+        logfile = open(user_path+"/log.txt","w")
         nb_spots = 0.
         while test:
             try:
