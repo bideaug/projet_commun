@@ -11,8 +11,12 @@ logname = os.environ['LOGNAME']
 boucle = True
 test = True 
 i = 0 #variable de choix de la session 1 nouvelle 2 ancienne
-fichier = open("/home/"+logname+"/projet_commun/Memorisation_Help/Mental_Palace/dic.txt","r")
-
+#J'ai rajouter ça parce qu'en fait je l'ai ranger hyper loin le répertoire et du coup c'est relou à gerer ça marchait pas ce que tu avais fait ... :/
+if logname == "aurigolys" :
+    path_to_dictionnaire = "/home/"+logname+"/Documents/programme/projet_commun/Memorisation_Help/Mental_Palace/dic.txt"
+else : 
+    path_to_dictionnaire = "/home/"+logname+"/projet_commun/Memorisation_Help/Mental_Palace/dic.txt"
+fichier = open(path_to_dictionnaire,"r")
 lecture = fichier.read()
 lecture = lecture.lower()
 word = lecture.split()
