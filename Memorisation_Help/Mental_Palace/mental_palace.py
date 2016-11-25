@@ -23,7 +23,7 @@ word = lecture.split()
 
 while boucle :
     try : 
-        if os.path.isfile(user_path+"/log.txt") : 
+        if os.path.isfile(user_path+"/log_1.txt") : 
             i = input("1) Nouvelle session de test\n2) Ancienne session de test\n")
         else :
             i = 1
@@ -35,7 +35,21 @@ while boucle :
         boucle = True
 
 if i==2 :
-    logfile = open(user_path+"/log.txt","r") 
+    boucle = True
+    k=0
+    for j in os.listdir(user_path):
+        if 'log_' in j:
+            k+=1
+    while boucle:
+        try : 
+            i = input(str(k)+" Palais mental. Entrez le numero de celui a tester:\n")
+        except :
+            print ("Mauvaise entree\n")
+        if i<k or i>k : 
+            print ("Mauvaise entree\n")
+        else : boucle=False
+
+    logfile = open(user_path+"/log_"+str(i)+".txt","r") 
     verifiaction = str()
     verification = raw_input("Veuillez entrer la liste de mot dans l'ordre\n")
     log = logfile.read()
@@ -43,7 +57,12 @@ if i==2 :
     print log
 
 else :
-        logfile = open(user_path+"/log.txt","w")
+    k=0
+    for j in os.listdir(user_path):
+        if 'log_' in j:
+            k+=1
+
+        logfile = open(user_path+"/log_"+str(k+1)+".txt","w")
         nb_spots = 0.
         while test:
             try:
