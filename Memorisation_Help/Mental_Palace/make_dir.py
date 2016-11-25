@@ -9,7 +9,7 @@ def Make_direction():
         os.chdir("..")
     
     path = os.getcwd()+"/projet_commun/Users_Files"
-    path_to_dic=os.getcwd()+"/projet_commun" 
+    path_to_dic=os.getcwd()+"/projet_commun/Memorisation_Help/Mental_Palace/dic.txt" 
     print "veuillez indiquer votre numero d'utilisateur:\n"
     if os.path.isdir(path):
         users = os.listdir(path)
