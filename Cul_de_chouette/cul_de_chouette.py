@@ -69,6 +69,13 @@ while Jouer == True :
             nom = nom_joueur_2
             print("C'est au tour de",nom," de jouer ! ")
             point = fct.Tour_de_jeu()
+            if nombre_de_joueur == 2 :
+                Actualisation_des_scores(score_joueur_1, score_joueur_2,point,modif_score_de)
+            elif nombre_de_joueur == 3 :
+                Actualisation_des_scores(score_joueur_1, score_joueur_2,score_joueur_3,point,modif_score_de)
+            elif nombre_de_joueur == 4 :
+                Actualisation_des_scores(score_joueur_1, score_joueur_2,score_joueur_3,score_joueur_4,point,modif_score_de)
+
             score_joueur_2 = score_joueur_2 + point
             is_gagnant = fct.Gagnant(score_joueur_2)
             if is_gagnant :

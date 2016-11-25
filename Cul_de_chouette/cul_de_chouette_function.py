@@ -73,7 +73,7 @@ def Cul_de_chouette(de_1,de_2,de_3):
     return is_cul_de_chouette
 
 def Chouette_bleu_rouge(de_1,de_2,de_3):
-    if (de_1 == 4 and de_2 == 4 and de_3 == 5) or (de_1 == 5 and de_2 == 4 and de_3 == 4) or (de_1 == 4 and de_2 == 5 and de_3 == 4):
+    if (de_1 == 3 and de_2 == 3 and de_3 == 4) or (de_1 == 4 and de_2 == 3 and de_3 == 3) or (de_1 == 3 and de_2 == 4 and de_3 == 3):
         bleu_rouge = True
     else :
         bleu_rouge = False
@@ -90,6 +90,50 @@ def Velute(de_1,de_2,de_3):
         velute_de = False
     return velute_de
 
+def Verification_nom_joueur(nom_a_tester,nb_joueur):
+    is_name_ok = False
+    numero = False
+    while nb_joueur > 0 and is_name_ok == False:
+        if nb_joueur == 1 :
+            if nom_joueur_1 == nom_a_tester :
+                numero = 1
+                is_name_ok = True
+        if nb_joueur == 2 :
+            if nom_joueur_2 == nom_a_tester :
+                numero = 2
+                is_name_ok = True
+        if nb_joueur == 3 :
+            if nom_joueur_3 == nom_a_tester :
+                numero = 3
+                is_name_ok = True
+        if nb_joueur == 4 :
+            if nom_joueur_4 == nom_a_tester :
+                numero = 4
+                is_name_ok = True
+    nb_joueur = nb_joueur -1
+    return numero
+
+
+def Test_figure(figure):
+    if figure == "velute" :
+        print("Qui a dit : Pas mou le caillou en premier ? ")
+        nom_joueur_point = raw_input()
+        donner_point = False
+        while donner_point == False :
+            try :
+                numero_du_joueur = Verification_nom_joueur(nom_joueur_point)
+                if numero_du_joueur :
+                    donner_point = True
+                    return numero_du_joueur
+            except :
+                donner_point = False
+                
+    elif figure == "suite" :
+
+    else :
+        print("Erreur sur la figure dans la fonction Test_figure")
+    
+
 
 def Figure_and_points(de_1,de_2,de_3):
     points = 0
@@ -99,14 +143,13 @@ def Figure_and_points(de_1,de_2,de_3):
         is_bleu_rouge = Chouette_bleu_rouge(de_1,de_2,de_3)
         is_chouette_velute = Velute(de_1,de_2,de_3)
         is_cul_de_chouette = Cul_de_chouette(de_1,de_2,de_3)
-        #print(is_bleu_rouge)
-        #print(is_chouette_velute)
         if is_bleu_rouge :
             points = is_chouette**2
 #faire les trucs du bleu rouge
 #faire le condition pour les autres chouette special
         elif is_chouette_velute :
             points = 2*(is_chouette**2)
+            
             print("Vous avez gagner les points de la chouette velute")
         elif is_cul_de_chouette : 
             points = 50+(is_cul_de_chouette-1)*10
