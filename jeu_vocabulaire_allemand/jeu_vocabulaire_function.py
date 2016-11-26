@@ -18,6 +18,7 @@ def test_niveau(variable_a_tester) :
     """ 
 Cette fonction test l'entrer du joueur et vérifie que c'est bien un entier en 1 et 4    
     """
+    variable_a_tester = int(variable_a_tester)
     if (variable_a_tester > 0 and variable_a_tester < 5) :
         variable_ok = True
     else :

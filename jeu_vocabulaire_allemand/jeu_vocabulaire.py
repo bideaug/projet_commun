@@ -17,11 +17,10 @@ nom_utilisateur = raw_input("Quel est votre nom ? ")
 while test_valide == False :
     nombre_de_fois=fpj.choix_niveau(nombre_de_fois)
     niveau = raw_input()
-    try :
-        niveau = int(niveau)
-    except :
-        print("Rentrer un numéro s'il vous plait")
     var_ok = fpj.test_niveau(niveau)
-    test_valide=fpj.ouverture_du_niveau(niveau,var_ok)
+    if var_ok :
+        test_valide=fpj.ouverture_du_niveau(niveau,var_ok)
 
+print("Le niveau selectionner contient : ",nb_de_mot_du_niveau,".")
+print("Combien de mot voulez vous avoir ? 0 toute la liste")
 
