@@ -45,7 +45,7 @@ if i==2 :
             i = input(str(k)+" Palais mental. Entrez le numero de celui a tester:\n")
         except :
             print ("Mauvaise entree\n")
-        if i<k or i>k : 
+        if i<0 or i>k : 
             print ("Mauvaise entree\n")
         else : boucle=False
 
@@ -62,21 +62,20 @@ else :
         if 'log_' in j:
             k+=1
 
-        logfile = open(user_path+"/log_"+str(k+1)+".txt","w")
-        nb_spots = 0.
-        while test:
-            try:
-                nb_spots = input("Veuillez entrer le nombre de spot dans votre palais\n")
-                test = False
-            except :
-                print ("Mauvaise entree\n")
+    logfile = open(user_path+"/log_"+str(k+1)+".txt","w")
+    nb_spots = 0.
+    while test:
+        try:
+            nb_spots = input("Veuillez entrer le nombre de spot dans votre palais\n")
+            test = False
+        except :
+            print ("Mauvaise entree\n")
 
-        spots = []
+    spots = []
 
-        for i in np.arange(nb_spots):
-            spots.append(word[np.random.randint(len(word))])
-        print "Liste de mot a retenir"
-        print spots
-        for i in np.arange(len(spots)):
-            logfile.write(spots[i]+" ")
-
+    for i in np.arange(nb_spots):
+        spots.append(word[np.random.randint(len(word))])
+    print "Liste de mot a retenir"
+    print spots
+    for i in np.arange(len(spots)):
+        logfile.write(spots[i]+" ")
