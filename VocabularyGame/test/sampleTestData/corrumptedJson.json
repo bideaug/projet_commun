@@ -1,0 +1,19 @@
+{
+  "words" : [{
+    "ge": "stellen",
+    "fr": "mettre",
+    "comment": "debout"
+  },{
+    "ge": "nehmen",
+    "inflection": [{
+      "present" : "i",
+      "preterit": "a",
+      "composedPart": "o"
+      }],
+    "fr": "prendre"
+  }, {
+    "ge": "wiederholen",
+    "fr": "répéter"
+  
+  ]
+}

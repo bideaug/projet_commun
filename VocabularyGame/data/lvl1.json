@@ -1,0 +1,454 @@
+{
+  "words" : [{
+    "ge": "stellen",
+    "fr": "mettre",
+    "comment": "debout"
+  },{
+    "ge": "nehmen",
+    "inflection": "i a o",
+    "fr": "prendre"
+  }, {
+    "ge": "wiederholen",
+    "fr": "répéter"
+  }, {
+    "ge": "holen",
+    "fr": "aller chercher"
+  }, {
+    "ge": "der Skifahrer",
+    "fr": "le skieur",
+    "plural": "-"
+  }, {
+    "ge": "der Fahrplan",
+    "fr": "l'horraire, l'indicateur",
+    "plural": "¨e"
+  }, {
+    "ge": "die Fahrkarte",
+    "fr": "le ticket, le titre de transport",
+    "plural": "n"
+  }, {
+    "ge": "das Fahrrad",
+    "fr": "la bicyclette",
+    "plural": "¨ er"
+  }, {
+    "ge": "fahren",
+    "fr": "conduire, transporter, aller",
+    "inflection": "ä u a"
+  }, {
+    "ge": "geben",
+    "fr": "donner",
+    "inflection": "i a e"
+  }, {
+    "ge": "senden",
+    "fr": "diffuser"
+  }, {
+    "ge": "achten",
+    "fr": "faire attention à, respecter"
+  }, {
+    "ge": "ändern",
+    "fr": "changer"
+  }, {
+    "ge": "allgemein",
+    "fr": "général"
+  }, {
+    "ge": "kommen",
+    "fr": "venir",
+    "inflection": "a o"
+  }, {
+    "ge": "die Kleidung",
+    "fr": "le vêtement",
+    "plural" : "/"
+  }, {
+    "ge": "das Kleid",
+    "fr": "la robe, les vêtements",
+    "plural": "er"
+  }, {
+    "ge": "halten",
+    "fr": "tenir, s'arrêter",
+    "inflection": "ä, ie, a"
+  }, {
+    "ge": "an/fangen",
+    "fr": "commencer",
+    "inflection": "ä i a"
+  }, {
+    "ge": "gefallen",
+    "fr": "plaire",
+    "inflection": "ä ie a"
+  }, {
+    "ge": "der Fall",
+    "fr": "le cas",
+    "plural": "¨e"
+  }, {
+    "ge": "fallen",
+    "fr": "tomber",
+    "inflection": "ä ie a"
+  }, {
+    "ge": "folgen",
+    "fr": "suivre"
+  }, {
+    "ge": "bringen",
+    "fr": "apporter",
+    "inflection": "a a"
+  }, {
+    "ge": "sich entschuldigen",
+    "fr": "s'excuser"
+  }, {
+    "ge": "lebendig",
+    "fr": "vivant"
+  }, {
+    "ge": "auf/stehen",
+    "fr": "se lever",
+    "inflection": "a a"
+  }, {
+    "ge": "richtig",
+    "fr": "exact"
+  }, {
+    "ge": "legen",
+    "fr": "poser"
+  }, {
+    "ge": "warten auf + Akk",
+    "fr": "attendre"
+  }, {
+    "ge": "die Ruhe",
+    "fr": "le calme, le repos",
+    "plural": "-"
+  }, {
+    "ge": "die Richtung",
+    "fr": "la direction",
+    "plural": "en"
+  }, {
+    "ge": "die Zeitung",
+    "fr": "le journal",
+    "plural": "en"
+  }, {
+    "ge": "besuchen",
+    "fr": "rendre visite à"
+  }, {
+    "ge": "verkaufen",
+    "fr": "vendre"
+  }, {
+    "ge": "einfach",
+    "fr": "simple"
+  }, {
+    "ge": "liegen",
+    "fr": "être allongé",
+    "inflection": "a e"
+  }, {
+    "ge": "steigen",
+    "fr": "monter",
+    "inflection": "ie ie"
+  }, {
+    "ge": "suchen",
+    "fr": "chercher"
+  }, {
+    "ge": "schmutzig",
+    "fr": "sale"
+  }, {
+    "ge": "lang",
+    "fr": "long"
+  }, {
+    "ge": "mieten",
+    "fr": "louer, prendre en location"
+  }, {
+    "ge": "der Teil",
+    "fr": "la partie",
+    "plural": "la partie"
+  }, {
+    "ge": "schauen",
+    "fr": "regarder"
+  }, {
+    "ge": "zahlen",
+    "fr": "payer"
+  }, {
+    "ge": "schlecht",
+    "fr": "mal, mauvais"
+  }, {
+    "ge": "rasch",
+    "fr": "rapide"
+  }, {
+    "ge": "zählen",
+    "fr": "compter"
+  }, {
+    "ge": "die Zeit",
+    "fr": "le temps",
+    "plural" : "en",
+    "comment": "qui passe"
+  }, {
+    "ge": "die Jahr",
+    "fr": "l'année",
+    "plural": "e"
+  }, {
+    "ge": "kaufen",
+    "fr": "acheter"
+  }, {
+    "ge": "vermieten",
+    "fr": "louer à"
+  }, {
+    "ge": "teilen",
+    "fr": "partager"
+  }, {
+    "ge": "wissen",
+    "fr": "savoir",
+    "inflection": "ei u u"
+  }, {
+    "ge": "lieben",
+    "fr": "aimer"
+  }, {
+    "ge": "stehen",
+    "fr": "se tenir debout",
+    "comment": "être",
+    "inflection": "a a"
+  }, {
+    "ge": "leicht",
+    "fr": "léger"
+  }, {
+    "ge": "schließen",
+    "fr": "fermer",
+    "inflection": "o o"
+  }, {
+    "ge": "schwimmen",
+    "fr": "nager",
+    "inflection": "a o"
+  }, {
+    "ge": "der Mut",
+    "fr": "le courage",
+    "plural": "-"
+  }, {
+    "ge": "zusammen",
+    "fr": "ensemble"
+  }, {
+    "ge": "der Schlüssel",
+    "fr": "la clé, la clef",
+    "plural": "-"
+  }, {
+    "ge": "zeigen",
+    "fr": "montrer"
+  }, {
+    "ge": "denken an + Akk",
+    "fr": "penser à",
+    "inflection": "a a"
+  }, {
+    "ge": "brauchen",
+    "fr": "avoir besoin de"
+  }, {
+    "ge": "das Wort",
+    "fr": "le mot",
+    "plural": "¨er"
+  }, {
+    "ge": "ruhig",
+    "fr": "calme"
+  }, {
+    "ge": "breit",
+    "fr": "large"
+  }, {
+    "ge": "der Eingang",
+    "fr": "l'entrée",
+    "plural": "¨e"
+  }, {
+    "ge": "lassen",
+    "fr": "laisser",
+    "inflection": "ä ie a"
+  }, {
+    "ge": "gehen",
+    "fr": "aller",
+    "inflection": "i a"
+  }, {
+    "ge": "werfen",
+    "fr": "jeter",
+    "comment": "lancer",
+    "inflection": "i a o"
+  }, {
+    "ge": "der Besuch",
+    "fr": "la visite",
+    "comment": "à une personne",
+    "plural": "e"
+  }, {
+    "ge": "das Leben",
+    "fr": "la vie",
+    "plural": "-"
+  }, {
+    "ge": "verstehen",
+    "fr": "comprendre",
+    "inflection": "a a"
+  }, {
+    "ge": "lachen",
+    "fr": "rire"
+  }, {
+    "ge": "wachsen",
+    "fr": "pousser, croître",
+    "inflection": "ä u a"
+  }, {
+    "ge": "der Sohn",
+    "fr": "le fils",
+    "plural": "¨e"
+  }, {
+    "ge": "sprechen",
+    "fr": "parler",
+    "inflection": "i a o"
+  }, {
+    "ge": "tragen",
+    "fr": "porter",
+    "inflection": "ä u a"
+  }, {
+    "ge": "wunderbar",
+    "fr": "merveilleux"
+  }, {
+    "ge": "die Zahl",
+    "fr": "le nombre",
+    "plural": "en"
+  }, {
+    "ge": "das Recht",
+    "fr": "le droit",
+    "plural": "e"
+  }, {
+    "ge": "hören",
+    "fr": "entendre"
+  }, {
+    "ge": "versuchen",
+    "fr": "essayer"
+  }, {
+    "ge": "decken",
+    "fr": "couvrir"
+  }, {
+    "ge": "die Stimme",
+    "fr": "la voix",
+    "plural": "n"
+  }, {
+    "ge": "der Schlag",
+    "fr": "le coup",
+    "plural": "¨e"
+  }, {
+    "ge": "finden",
+    "fr": "trouver",
+    "inflection": "a u"
+  }, {
+    "ge": "der Fehler",
+    "fr": "la faute",
+    "plural": "-"
+  }, {
+    "ge": "fehlen",
+    "fr": "manquer",
+    "inflection": "ie a o"
+  }, {
+    "ge": "die Bäckerei",
+    "fr": "la boulangerie",
+    "plural": "en"
+  }, {
+    "ge": "die Bäcker",
+    "fr": "le boulanger",
+    "plural": "-"
+  }, {
+    "ge": "backen",
+    "fr": "cuire"
+  }, {
+    "ge": "dank + Dat",
+    "fr": "grâce à"
+  }, {
+    "ge": "der Einwohner",
+    "fr": "l'habitant"
+  }, {
+    "ge": "die Wohnung",
+    "fr": "l'appartement",
+    "plural": "en"
+  }, {
+    "ge": "wohnen",
+    "fr": "habiter"
+  }, {
+    "ge": "die Zeichnung",
+    "fr": "en le dessin"
+  }, {
+    "ge": "ausgezeichnet",
+    "fr": "excellent"
+  }, {
+    "ge": "zeichnen",
+    "fr": "dessiner"
+  }, {
+    "ge": "der Flügel",
+    "fr": "l'aile",
+    "plural": "-"
+  }, {
+    "ge": "der Flugzug",
+    "fr": "l'avion",
+    "plural": "e"
+  }, {
+    "ge": "der Flughafen",
+    "fr": "l'aéroport",
+    "plural": "-"
+  }, {
+    "ge": "der Flug",
+    "fr": "le vol",
+    "plural": "¨e"
+  }, {
+    "ge": "der Drucker",
+    "fr": "l'imprimante",
+    "plural": "-"
+  }, {
+    "ge": "der Ausdruck",
+    "fr": "l'expression",
+    "plural": "¨e"
+  }, {
+    "ge": "ziehen",
+    "fr": "tirer",
+    "inflection": "o o"
+  }, {
+    "ge": "vorsichtig",
+    "fr": "prudement"
+  }, {
+    "ge": "sehen",
+    "fr": "voir",
+    "inflection": "ie a e"
+  }, {
+    "ge": "der Anruf",
+    "fr": "l'appel",
+    "plural": "e",
+    "comment": "téléphone"
+  }, {
+    "ge": "rufen",
+    "fr": "appeler",
+    "inflection": "ie u"
+  }, {
+    "ge": "kennen",
+    "fr": "connaître",
+    "inflection": "a a"
+  }, {
+    "ge": "gehen + Akk",
+    "fr": "contre, environ, vers"
+  }, {
+    "ge": "froh",
+    "fr": "content"
+  }, {
+    "ge": "die Freude",
+    "fr": "la joie",
+    "plural": "n"
+  }, {
+    "ge": "unzufrieden",
+    "fr": "mécontent, insatisfait"
+  }, {
+    "ge": "übersetzen",
+    "fr": "traduire"
+  }, {
+    "ge": "setzen",
+    "fr": "poser, assoir"
+  }, {
+    "ge": "sich setzen",
+    "fr": "s'assoir"
+  }, {
+    "ge": "sitzen",
+    "fr": "être assis",
+    "inflection": "a e"
+  }, {
+    "ge": "schreiben",
+    "fr": "écrire",
+    "inflection": "ie ie"
+  }, {
+    "ge": "nutzen",
+    "fr": "être utile à, servir à"
+  }, {
+    "ge": "die Mühe",
+    "fr": "la peine, le mal",
+    "plural": "n"
+  }, {
+    "ge": "unaufmerksam",
+    "fr": "inattentif"
+  }
+  ]
+}
