@@ -9,8 +9,21 @@ from discord.ext.commands import Bot
 BOT_PREFIX = ("?", "!")
 TOKEN = 'NDM1Nzk1NDk1ODM1OTI2NTI4.DbeK7g.-uOyUCdpRyA0IT_KG-VJcCAw1bk'
 
+class Duck_bot(Bot):
+    def __init__(self,command_prefix):
+        Bot.__init__(self,command_prefix)
+        self.faim = 100
+    
+    def get_faim(self):
+        return self.faim
 
-bot = Bot(command_prefix=BOT_PREFIX)
+    def set_faim(self,new_faim):
+        self.faim = new_faim
+        if self.faim < 0:
+            self.faim = 0
+
+
+bot = Duck_bot(command_prefix=BOT_PREFIX)
 
 @bot.event
 async def on_message(message):
@@ -18,8 +31,8 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
-    if message.content.startswith('!hello'):
-        msg = 'Hello {0.author.mention}'.format(message)
+    if message.content.startswith('Hello Ducky'):
+        msg = 'Hello {0.author.mention}! <3'.format(message)
         await message.channel.send(msg)
         
     if 'ducky' in str(message.content).lower():
@@ -27,29 +40,24 @@ async def on_message(message):
         await message.channel.send(msg)
         
     if 'faim' in str(message.content).lower():
-        msg = 'FAIM!'.format(message)
+        msg = ('FAIM! genre '+str(bot.get_faim()))+"%".format(message)
         await message.channel.send(msg)
     
     if 'snack' in str(message.content).lower():
-        possible_responses = ['Owiiiiii!!!',
-                            'Miam!',
-                            'Bofbof!',
+        possible_responses = ['Naaaaa',
                             'Coin...',
-                            'Naaaaa',
+                            'Bofbof!',
+                            'Miam!',
+                            'Owiiiiiii',
                             ]
-        msg = random.choice(possible_responses)
+        msg = possible_responses[int(0.5+(4*bot.get_faim()/100))]
         await message.channel.send(msg)
     await bot.process_commands(message)
 
 @bot.command()
 async def snack(ctx):
-    possible_responses = ['Owiiiiii!!!',
-                        'Miam!',
-                        'Bofbof!',
-                        'Coin...',
-                        'Naaaaa',
-                        ]
-    await ctx.send(random.choice(possible_responses))
+    bot.set_faim(bot.get_faim()-1)
+    await ctx.send("*scrounch scrouch*" )
 
 @bot.event
 async def on_ready():
