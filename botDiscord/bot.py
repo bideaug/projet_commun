@@ -57,7 +57,12 @@ async def on_message(message):
 @bot.command()
 async def snack(ctx):
     bot.set_faim(bot.get_faim()-1)
-    await ctx.send("*scrounch scrouch*" )
+    await ctx.send("*scrounch scrouch*")
+
+
+@bot.command()
+async def pict(ctx):
+    await ctx.channel.send(file = discord.File("Beautiful_Duck.jpg"))
 
 @bot.event
 async def on_ready():
