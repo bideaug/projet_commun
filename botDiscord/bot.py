@@ -3,6 +3,7 @@ import discord
 import random
 import asyncio
 import aiohttp
+import os
 from discord import Game
 from discord.ext.commands import Bot
 
@@ -62,8 +63,24 @@ async def snack(ctx):
 
 @bot.command()
 async def pict(ctx):
-    await ctx.channel.send(file = discord.File("Beautiful_Duck.jpg"))
+    direc = os.listdir(os.getcwd()+'/Pictures')
+    msg ="Photos "
+    for i in direc:
+        msg += i
+        if i != direc[-1]:
+            msg+=", "
+    msg += "?"
+    await ctx.send(msg)
 
+    def choice_check(m):
+        return (m.content in direc)
+
+    msg = await bot.wait_for('message',check = choice_check)
+    direc = os.getcwd()+ "/Pictures/"+msg.content
+    possible_pict = os.listdir(direc)
+    pict = direc + '/'+random.choice(possible_pict) 
+
+    await ctx.send(file=discord.File(pict))
 @bot.event
 async def on_ready():
     print('Logged in as')
