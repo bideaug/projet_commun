@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -19,110 +18,112 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='word.proto',
   package='',
   syntax='proto2',
-  serialized_pb=_b('\n\nword.proto\"\xb4\x02\n\x0fVocabularyWords\x12$\n\x05words\x18\x01 \x03(\x0b\x32\x15.VocabularyWords.Word\x1a\xfa\x01\n\x04Word\x12\x17\n\x0fwordInFirstLang\x18\x01 \x02(\t\x12\x18\n\x10wordInSecondLang\x18\x02 \x02(\t\x12-\n\tfirstLang\x18\x03 \x02(\x0e\x32\x1a.VocabularyWords.Word.Lang\x12.\n\nsecondLang\x18\x04 \x02(\x0e\x32\x1a.VocabularyWords.Word.Lang\x12\x0f\n\x07\x63omment\x18\x05 \x01(\t\x12\x12\n\ninflection\x18\x06 \x01(\t\x12\x0e\n\x06plural\x18\x07 \x01(\t\"+\n\x04Lang\x12\n\n\x06\x46RENCH\x10\x00\x12\n\n\x06GERMAN\x10\x01\x12\x0b\n\x07\x45NGLISH\x10\x02')
+  serialized_options=None,
+  serialized_pb=_b('\n\nword.proto\"\xda\x01\n\x04Word\x12\x17\n\x0fwordInFirstLang\x18\x01 \x02(\t\x12\x18\n\x10wordInSecondLang\x18\x02 \x02(\t\x12\x1d\n\tfirstLang\x18\x03 \x02(\x0e\x32\n.Word.Lang\x12\x1e\n\nsecondLang\x18\x04 \x02(\x0e\x32\n.Word.Lang\x12\x0f\n\x07\x63omment\x18\x05 \x01(\t\x12\x12\n\ninflection\x18\x06 \x01(\t\x12\x0e\n\x06plural\x18\x07 \x01(\t\"+\n\x04Lang\x12\n\n\x06\x46RENCH\x10\x00\x12\n\n\x06GERMAN\x10\x01\x12\x0b\n\x07\x45NGLISH\x10\x02\"\'\n\x0fVocabularyWords\x12\x14\n\x05words\x18\x01 \x03(\x0b\x32\x05.Word')
 )
 
 
 
-_VOCABULARYWORDS_WORD_LANG = _descriptor.EnumDescriptor(
+_WORD_LANG = _descriptor.EnumDescriptor(
   name='Lang',
-  full_name='VocabularyWords.Word.Lang',
+  full_name='Word.Lang',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
       name='FRENCH', index=0, number=0,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='GERMAN', index=1, number=1,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='ENGLISH', index=2, number=2,
-      options=None,
+      serialized_options=None,
       type=None),
   ],
   containing_type=None,
-  options=None,
-  serialized_start=280,
-  serialized_end=323,
+  serialized_options=None,
+  serialized_start=190,
+  serialized_end=233,
 )
-_sym_db.RegisterEnumDescriptor(_VOCABULARYWORDS_WORD_LANG)
+_sym_db.RegisterEnumDescriptor(_WORD_LANG)
 
 
-_VOCABULARYWORDS_WORD = _descriptor.Descriptor(
+_WORD = _descriptor.Descriptor(
   name='Word',
-  full_name='VocabularyWords.Word',
+  full_name='Word',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='wordInFirstLang', full_name='VocabularyWords.Word.wordInFirstLang', index=0,
+      name='wordInFirstLang', full_name='Word.wordInFirstLang', index=0,
       number=1, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='wordInSecondLang', full_name='VocabularyWords.Word.wordInSecondLang', index=1,
+      name='wordInSecondLang', full_name='Word.wordInSecondLang', index=1,
       number=2, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='firstLang', full_name='VocabularyWords.Word.firstLang', index=2,
+      name='firstLang', full_name='Word.firstLang', index=2,
       number=3, type=14, cpp_type=8, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='secondLang', full_name='VocabularyWords.Word.secondLang', index=3,
+      name='secondLang', full_name='Word.secondLang', index=3,
       number=4, type=14, cpp_type=8, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='comment', full_name='VocabularyWords.Word.comment', index=4,
+      name='comment', full_name='Word.comment', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='inflection', full_name='VocabularyWords.Word.inflection', index=5,
+      name='inflection', full_name='Word.inflection', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='plural', full_name='VocabularyWords.Word.plural', index=6,
+      name='plural', full_name='Word.plural', index=6,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
-    _VOCABULARYWORDS_WORD_LANG,
+    _WORD_LANG,
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=73,
-  serialized_end=323,
+  serialized_start=15,
+  serialized_end=233,
 )
+
 
 _VOCABULARYWORDS = _descriptor.Descriptor(
   name='VocabularyWords',
@@ -137,45 +138,44 @@ _VOCABULARYWORDS = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
-  nested_types=[_VOCABULARYWORDS_WORD, ],
+  nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto2',
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15,
-  serialized_end=323,
+  serialized_start=235,
+  serialized_end=274,
 )
 
-_VOCABULARYWORDS_WORD.fields_by_name['firstLang'].enum_type = _VOCABULARYWORDS_WORD_LANG
-_VOCABULARYWORDS_WORD.fields_by_name['secondLang'].enum_type = _VOCABULARYWORDS_WORD_LANG
-_VOCABULARYWORDS_WORD.containing_type = _VOCABULARYWORDS
-_VOCABULARYWORDS_WORD_LANG.containing_type = _VOCABULARYWORDS_WORD
-_VOCABULARYWORDS.fields_by_name['words'].message_type = _VOCABULARYWORDS_WORD
+_WORD.fields_by_name['firstLang'].enum_type = _WORD_LANG
+_WORD.fields_by_name['secondLang'].enum_type = _WORD_LANG
+_WORD_LANG.containing_type = _WORD
+_VOCABULARYWORDS.fields_by_name['words'].message_type = _WORD
+DESCRIPTOR.message_types_by_name['Word'] = _WORD
 DESCRIPTOR.message_types_by_name['VocabularyWords'] = _VOCABULARYWORDS
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-VocabularyWords = _reflection.GeneratedProtocolMessageType('VocabularyWords', (_message.Message,), dict(
+Word = _reflection.GeneratedProtocolMessageType('Word', (_message.Message,), dict(
+  DESCRIPTOR = _WORD,
+  __module__ = 'word_pb2'
+  # @@protoc_insertion_point(class_scope:Word)
+  ))
+_sym_db.RegisterMessage(Word)
 
-  Word = _reflection.GeneratedProtocolMessageType('Word', (_message.Message,), dict(
-    DESCRIPTOR = _VOCABULARYWORDS_WORD,
-    __module__ = 'word_pb2'
-    # @@protoc_insertion_point(class_scope:VocabularyWords.Word)
-    ))
-  ,
+VocabularyWords = _reflection.GeneratedProtocolMessageType('VocabularyWords', (_message.Message,), dict(
   DESCRIPTOR = _VOCABULARYWORDS,
   __module__ = 'word_pb2'
   # @@protoc_insertion_point(class_scope:VocabularyWords)
   ))
 _sym_db.RegisterMessage(VocabularyWords)
-_sym_db.RegisterMessage(VocabularyWords.Word)
 
 
 # @@protoc_insertion_point(module_scope)

@@ -1,21 +1,23 @@
 
 syntax = "proto2";
 
-message VocabularyWords {
-  message Word {
-    required string wordInFirstLang = 1;
-    required string wordInSecondLang = 2;
-    required Lang firstLang = 3;
-    required Lang secondLang = 4;
-    optional string comment = 5;
-    optional string inflection = 6;
-    optional string plural = 7;
 
-    enum Lang {
-      FRENCH = 0;
-      GERMAN = 1;
-      ENGLISH = 2;
-    }
+message Word {
+  required string wordInFirstLang = 1;
+  required string wordInSecondLang = 2;
+  required Lang firstLang = 3;
+  required Lang secondLang = 4;
+  optional string comment = 5;
+  optional string inflection = 6;
+  optional string plural = 7;
+
+  enum Lang {
+    FRENCH = 0;
+    GERMAN = 1;
+    ENGLISH = 2;
   }
+}
+
+message VocabularyWords {
   repeated Word words = 1;
 }
