@@ -17,6 +17,9 @@ CCProto = protoc
 proto: $(PROTOPATH)/word.proto ## Compile the .proto file
 	$(CCProto) -I=$(PROTOPATH) --python_out=$(PROTOPATH) $(PROTOPATH)/word.proto
 
+graphical:
+	$(CC) main.py -g
+
 run: main.py ## Run the program
 	$(CC) main.py
 
