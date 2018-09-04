@@ -10,7 +10,7 @@ from discord import Game
 from discord.ext.commands import Bot
 
 BOT_PREFIX = ("?", "!")
-TOKEN = 
+TOKEN = 'NDM1Nzk1NDk1ODM1OTI2NTI4.DbeK7g.-uOyUCdpRyA0IT_KG-VJcCAw1bk'
 
 class Duck_bot(Bot):
     def __init__(self,command_prefix):
