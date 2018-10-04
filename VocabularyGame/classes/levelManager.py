@@ -1,7 +1,9 @@
 class LevelManager:
-    def __init__(self):
+    def __init__(self, selectedLevel = None):
         self.availableLevelList = self.getAvailableLevelList()
-        self.selectedLevel = 0
+        self.selectedLevel = selectedLevel
+        if (self.selectedLevel == None):
+            self.selectALevel()
 
     def selectALevel(self):
         print("Here are the available level : ")
