@@ -7,6 +7,8 @@ from classes.wordLoader import WordLoader
 from classes.displayer import Displayer
 from classes.converter import Converter
 
+import os
+
 parser = OptionParser()
 parser.add_option("-g", "--graphical", dest="isGraphical", default=False, action="store_true", help="Display the graphical interface")
 parser.add_option("-c", "--convert", dest="convert", default=False, action="store_true",help="Convert data from source to dest")
@@ -15,6 +17,9 @@ parser.add_option("-d", "--dest", dest="destFile", default=None, help="Path to d
 (options, args) = parser.parse_args()
 
 def main(options, args):
+    gameMaster = GameMaster()
+
+
     if parser.values.isGraphical :
         d = Displayer()
     if parser.values.convert :

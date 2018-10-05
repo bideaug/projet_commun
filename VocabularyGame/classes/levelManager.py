@@ -1,3 +1,5 @@
+import os
+
 class LevelManager:
     def __init__(self, selectedLevel = None):
         self.availableLevelList = self.getAvailableLevelList()
@@ -16,7 +18,7 @@ class LevelManager:
             print("Level : " + lvl + " ")
 
     def askForTheWantedLevel(self):
-        selectedLevel = input('>>>')
+        selectedLevel = input('>>> ')
         print("selectedLevel : " + selectedLevel)
         try :
             selectedLevel = int(selectedLevel)
@@ -30,8 +32,18 @@ class LevelManager:
     def isValidLevel(self, levelToVerify):
         return str(levelToVerify) in self.availableLevelList
 
+
+    def parsingLevelIdFromFileName(self, fileName):
+        return fileName.split(".")[0].split("lvl")[1]
+
     def getAvailableLevelList(self) :
-        return ["1", "2", "3", "4"]
+        appDirectory = os.path.dirname(os.path.realpath("VocabularyGame"))
+        filesInData = os.listdir(appDirectory + "/data/")
+        lvlIds = []
+        for file in filesInData :
+            lvlIds.append(self.parsingLevelIdFromFileName(file))
+        return lvlIds
+
 
     def getSelectedLevel(self):
         if (self.selectedLevel == 0) :
